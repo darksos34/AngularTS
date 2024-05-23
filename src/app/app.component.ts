@@ -3,11 +3,15 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
+
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  // Corrected here
+  styleUrls: ['./app.component.css'] // Corrected here
 })
 export class AppComponent {
+
   title = 'client';
+
 }

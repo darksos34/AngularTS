@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './component/home/home.component';
+import {UserHomeComponent} from "./component/test/user.component";
 
-// @ts-ignore
+
 export const routes: Routes = [
   {
     path: '',
@@ -11,9 +12,14 @@ export const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    redirectTo: 'home',
-    pathMatch: 'prefix'
-  }
+    pathMatch: 'full'
+  },
+  {
+    path: 'user',
+    component: UserHomeComponent,
+    title: 'User Home'
+  },
+  {path: '**', redirectTo: 'home'}
 ]
 
 

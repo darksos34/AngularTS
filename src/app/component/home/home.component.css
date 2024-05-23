@@ -1,0 +1,10 @@
+/* Add your styling for the hamburger menu here */
+/* For example, hide the sidebar initially */
+.sidebar-wrapper-nav {
+  display: none;
+}
+
+/* Show the sidebar when the button is clicked */
+.sidebar-wrapper-nav.active {
+  display: block;
+}
