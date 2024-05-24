@@ -6,6 +6,21 @@
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
   </div>
+  <nav>
+    <ul>
+      <li><a routerLink="/home">Home</a></li>
+      <!-- Add more links as needed -->
+    </ul>
+  </nav>
+  <div>
+  <span class="user-home">
+    <ng-content select=".home"></ng-content>
+  </span>
+
+    <div class=".home">
+      <ng-content></ng-content>
+    </div>
+  </div>
 
 
 <router-outlet></router-outlet>

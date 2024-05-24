@@ -1,27 +1,25 @@
-
-<main class="main">
-  <div class="content">
-    <div class="left-side">
-
-Coool
+<div class="wrapper">
+  <div class="sidebar-wrapper">
+    <div class="title-content">
+      <h1 class="title-wrapper">Furniture</h1>
+      <button (click)="burgerMenuClick()">☰</button>
     </div>
-    <div class="sidebar-wrapper">
-      <div class="title-content">
-        <h1 class="title-wrapper">Furniture</h1>
-        <button (click)="burgerMenuClick()">☰</button>
-      </div>
-      <nav class="sidebar-wrapper-nav" *ngIf="showMenu"> <!-- Add *ngIf here -->
-        <ul>
-          <li class="list-wrapper">Home</li>
-          <li class="list-wrapper">Shop</li>
-          <li class="list-wrapper">Product</li>
-          <li class="list-wrapper">Cart</li>
-        </ul>
-      </nav>
-
-      <div class="main-content-wrapper">
-      </div>
-    </div>
+    <nav class="sidebar-wrapper-nav">
+      <ul>
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/shop">Shop</a></li>
+        <li><a routerLink="/user">Product</a></li>
+        <li><a routerLink="/cart">Cart</a></li>
+      </ul>
+    </nav>
   </div>
-</main>
-
+  <div class="main-content-wrapper">
+    <!-- Your main content here -->
+    <mat-toolbar color="primary">
+      <button mat-icon-button aria-label="Menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1>Responsive Material Sidenavigation</h1>
+    </mat-toolbar>
+  </div>
+</div>
